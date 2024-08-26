@@ -1,0 +1,15 @@
+[package]
+name = "dainmaku"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.14.0"
+# dfdx = { version = "0.13.0", features = ["safetensors"] }
+dfdx = {git="https://github.com/opfromthestart/dfdx.git", features=["safetensors", "cuda"]}
+once_cell = "1.19.0"
+rand = "0.8.5"
+
+[features]
+default=[]
+train=[]
